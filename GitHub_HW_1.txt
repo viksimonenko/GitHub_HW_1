@@ -1,0 +1,305 @@
+GITHub Homework 1
+
+ JSON
+ 4. Создать внешний репозиторий c названием JSON.
+ Repositories -> New -> Repository name: JSON -> Public -> Add a README file -> Create repository
+ 
+ 5. Клонировать репозиторий JSON на локальный компьютер.
+ git clone git@github.com:viksimonenko/JSON.git
+ 
+ 6. Внутри локального JSON создать файл “new.json”.
+ touch new.json
+ 
+ 7. Добавить файл под гит.
+ git add new.json
+ 
+ 8. Закоммитить файл.
+ git commit -m "new.json file creation"
+ 
+ 9. Отправить файл на внешний GitHub репозиторий.
+ git push
+ 
+ 10. Отредактировать содержание файла “new.json” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате JSON.
+ vim new.json
+ i - режим редактирования
+ {
+  "fullName": "Simonenko Viktoriya Mihaylovna",
+  "age": 33,
+  "numberOfPets": 0,
+  "futureDesiredSalary": "500 USD"
+}
+ esc :wq
+ 
+ 11. Отправить изменения на внешний репозиторий.
+ git add new.json
+ git commit -m "new.json file edit"
+	(вместо крайних двух команд также можно использовать git commit -am "new.json file edit" )
+ git push
+ 
+ 12. Создать файл preferences.json
+ touch preferences.json
+ 
+ 13. В файл preferences.json добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате JSON.
+ cat >> preferences.json
+ {
+  "favoriteMovie": "Kholop",
+  "favoriteSerial": "Pes",
+  "favoriteFood": "Healthy",
+  "favoriteSeason": "Spring",
+  "countryForVisit": "Greece"
+}
+ 
+ 14. Создать файл skills.json добавить информацию о скиллах которые будут изучены на курсе в формате JSON.
+ cat > skills.json
+ {
+  "apiTesting": "Postman",
+  "sniffingTools": "Charles, Fiddler",
+  "devTools": "Google Chrome, FireFox",
+  "externalServer": "Logs reading",
+  "mobileTesting": "Android Studio, ADB",
+  "setProxyVpn": "Android",
+  "commandLine": "Terminal",
+  "sqlBasics": "Create, Delete, Drop, Insert Into, Select, From, Where, Join",
+  "db": "Postgres, Redis",
+  "loadTesting": "Jmeter"
+ }
+  
+ 15. Отправить сразу 2 файла на внешний репозиторий.
+ git add .
+ git commit -m "preferences.json and skills.json files addition"
+ git push
+ 
+ 16. На веб интерфейсе создать файл bug_report.json.  
+ 17. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+ Add file -> Create new file -> bug_report.json -> bug_report.json addition (commit message) -> Commit new file
+ 
+ 18. На веб интерфейсе модифицировать файл bug_report.json, добавить баг репорт в формате JSON.
+ Click bug_report.json -> Edit this file 
+ {
+  "id": 1,
+  "summary": "The application closes after attempt to edit the Note title on the start page",
+  "severity": "Critical",
+  "description": "If try to edit the Note title on the start page, the application stops working and closes",
+  "environment": "Xiaomi Redmi 6A, Android 9",
+  "reproducibility": "always",
+  "symptom": "system crash",
+  "stepsToReproduce": {		
+	"1": "Tap on “New note” icon and enter the text",
+	"2": "Tap on “Save” icon",
+	"3": "Tap a few seconds on the Note",
+	"4": "Scroll down to “Edit title” item in pop-up menu",
+	"5": "Tap on “Edit title” item"	
+	}
+  "actualResult": "The application closes after attempt to edit the Note title on the start page",
+  "expectedResult": "The application continues working and Edit title field opens"
+ }
+ 
+ 19. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+ -> Commit changes : bug_report.json file modification -> Commit changes
+ 
+ 20. Синхронизировать внешний и локальный репозиторий JSON
+ git fetch - посмотреть были ли изменения на внешнем репозитории
+ git pull - синхронизация внешнего и внутреннего репозиториев.
+
+ XML
+ 21. Создать внешний репозиторий c названием XML.
+ Repositories -> New -> Repository name: XML -> Public -> Add a README file -> Create repository
+ 
+ 22. Клонировать репозиторий XML на локальный компьютер.
+ git clone git@github.com:viksimonenko/XML.git
+ 
+ 23. Внутри локального XML создать файл “new.xml”.
+ touch new.xml
+ 
+ 24. Добавить файл под гит.
+ git add new.xml
+ 
+ 25. Закоммитить файл.
+ git commit -m "new.xml file creation"
+ 
+ 26. Отправить файл на внешний GitHub репозиторий.
+ git push
+ 
+ 27. Отредактировать содержание файла “new.xml” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате XML.
+ vim new.xml
+ i - режим редактирования
+ <?xml version="1.0" encoding="utf-8"?>
+ <about_myself>
+	<fullName>Simonenko Viktoriya Mihaylovna</fullName>
+	<age>33</age>
+	<numberOfPets>0</numberOfPets>
+	<futureDesiredSalary>500 USD</futureDesiredSalary>
+ </about_myself> 
+ esc :wq
+ 
+ 28. Отправить изменения на внешний репозиторий.
+ git commit -am "info addition"
+ git push 
+ 
+ 29. Создать файл preferences.xml
+ touch preferences.xml
+  
+ 30. В файл preferences.xml добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате XML.
+ cat >> preferences.xml
+ <?xml version="1.0" encoding="utf-8"?>
+ <preferences>
+	<favoriteMovie>Kholop</favoriteMovie>
+	<favoriteSerial>Pes</favoriteSerial>
+	<favoriteFood>Healthy</favoriteFood>
+	<favoriteSeason>Spring</favoriteSeason>
+	<countryForVisit>Greece</countryForVisit>
+ </preferences> 
+   
+ 31. Создать файл skills.xml добавить информацию о скиллах которые будут изучены на курсе в формате XML.
+ cat > skills.xml
+ <?xml version="1.0" encoding="utf-8"?>
+ <skills>
+	<apiTesting>Postman</apiTesting>
+	<sniffingTools>Charles, Fiddler</sniffingTools>
+	<devTools>Google Chrome, FireFox</devTools>
+	<externalServer>Logs reading</externalServer>
+	<mobileTesting>Android Studio, ADB</mobileTesting>
+	<setProxyVpn>Android</setProxyVpn>
+	<commandLine>Terminal</commandLine>
+	<sqlBasics>Create, Delete, Drop, Insert Into, Select, From, Where, Join</sqlBasics>
+	<db>Postgres, Redis</db>
+	<loadTesting>Jmeter</loadTesting>
+  </skills>
+  
+ 32. Сделать коммит в одну строку.
+ git add . && git commit -m "creation of 2 files (preferences.xml and skills.xml)"
+  
+ 33. Отправить сразу 2 файла на внешний репозиторий.
+ git push
+ 
+ 34. На веб интерфейсе создать файл bug_report.xml.
+ 35. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+ Add file -> Create new file -> bug_report.xml -> create bug_report.xml (commit message) -> Commit new file
+ 
+ 36. На веб интерфейсе модифицировать файл bug_report.xml, добавить баг репорт в формате XML.
+ Click bug_report.xml -> Edit this file 
+ <?xml version="1.0" encoding="utf-8"?>
+ <bug_report>
+	<bugId>1</bugId>
+	<summary>The application closes after attempt to edit the Note title on the start page</summary>
+	<severity>Critical</severity>
+	<description>If try to edit the Note title on the start page, the application stops working and closes</description>
+	<environment>Xiaomi Redmi 6A, Android 9</environment>
+	<reproducibility>always</reproducibility>
+	<symptom>system crash</symptom>
+	<stepsToReproduce>
+		<step1>Tap on “New note” icon and enter the text</step1>
+		<step2>Tap on “Save” icon</step2>
+		<step3>Tap a few seconds on the Note</step3>
+		<step4>Scroll down to “Edit title” item in pop-up menu</step4>
+		<step5>Tap on “Edit title” item</step5>
+	</stepsToReproduce>
+	<actualResult>The application closes after attempt to edit the Note title on the start page</actualResult>
+	<expectedResult>The application continues working and Edit title field opens</expectedResult>
+  </bug_report>
+  
+ 37. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+ -> Commit changes : Update bug_report.xml -> Commit changes
+ 
+ 38. Синхронизировать внешний и локальный репозиторий XML.
+ git pull
+ 
+ TXT
+ 1. Создать внешний репозиторий c названием TXT.
+ Repositories -> New -> Repository name: TXT -> Public -> Add a README file -> Create repository
+ 
+ 2. Клонировать репозиторий TXT на локальный компьютер.
+ git clone git@github.com:viksimonenko/TXT.git
+ 
+ 3. Внутри локального TXT создать файл “new.txt”.
+ touch new.txt
+ 
+ 4. Добавить файл под гит.
+ git add new.txt
+ 
+ 5. Закоммитить файл.
+ git commit -m "create new.txt"
+ 
+ 6. Отправить файл на внешний GitHub репозиторий.
+ git push
+ 
+ 7. Отредактировать содержание файла “new.txt” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате TXT.
+ vim new.txt
+ i - режим редактирования
+  Info about myself:
+  Full name - Simonenko Viktoriya Mihaylovna,
+  Age - 33 years,
+  Number of pets - I don't have any pet yet,
+  Future desired salary - 500 USD (after 6 months of working).
+ esc :wq
+  
+ 8. Отправить изменения на внешний репозиторий.
+ git commit -am "Update new.txt"
+ git push
+ 
+ 9. Создать файл preferences.txt
+ touch preferences.txt
+ 
+ 10. В файл preferences.txt” добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате TXT.
+ cat >> preferences.txt
+ Some information about my preferances:
+ Favorite movie - "Kholop",
+ Favorite serial - "Pes",
+ Favorite food - Healthy food,
+ Favorite season - Spring,
+ Country that I want to visit - Greece.
+  
+ 11. Создать файл sklls.txt добавить информацию о скиллах которые будут изучены на курсе в формате TXT.
+ cat > skills.txt
+ Skills for learning:
+ API testing: Postman,
+ Web traffic sniffing (including mobile): Charles, Fiddler,
+ Dev Tools: Google Chrome, FireFox,
+ ExternalServer": "Logs reading",
+ Mobile testing": Android Studio, ADB,
+ Building iOS Apps with Xcode,
+ Building Android Apps with Android Studio,
+ Proxy and vpn set on iOS and Android,
+ Command line (terminal) Linux : copying, creating, viewing, moving files on servers without a graphical interface,
+ Bash scripring basics,
+ Access to remote servers,
+ SQL basics: Create, Delete, Drop, Insert Into, Select, From, Where, Join,
+ DB: Postgres, Redis,
+ Load testing": Jmeter,
+ Scrum Development Methodology.
+ 
+ 12. Сделать коммит в одну строку.
+ git add . && git commit -m "create 2 files (preferences.txt and skills.txt)"
+ 
+ 13. Отправить сразу 2 файла на внешний репозиторий.
+ git push
+ 
+ 14. На веб интерфейсе создать файл bug_report.txt.
+ 15. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+ Add file -> Create new file -> bug_report.txt -> create bug_report.txt (commit message) -> Commit new file
+ 
+ 16. На веб интерфейсе модифицировать файл bug_report.txt, добавить баг репорт в формате TXT.
+ Click bug_report.txt -> Edit this file 
+ID: 1
+Summary: The application closes after attempt to edit the Note title on the start page.
+Severity (Critical, Major, Medium, Minor): Critical
+Issue Type: Crash
+Description: If try to edit the Note title on the start page, the application stops working and closes.
+Reproduced on: Xiaomi Redmi 6A, Android 9
+Reproducibility: always
+Symptom: system crash
+Steps to reproduce: 
+1. Tap on “New note” icon and enter the text
+2. Tap on “Save” icon
+3. Tap a few seconds on the Note 
+4. Scroll down to “Edit title” item in pop-up menu
+5. Tap on “Edit title” item 
+Actual result: The application closes after attempt to edit the Note title on the start page.
+Expected result: The application continues working and Edit title field opens.
+Attachments: Screenrecorder_1.mp4, DeviceLog_1.txt
+ 
+ 17. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+ -> Commit changes : Update bug_report.txt -> Commit changes
+ 
+ 18. Синхронизировать внешний и локальный репозиторий TXT
+ git pull 
